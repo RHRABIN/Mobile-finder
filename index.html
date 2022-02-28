@@ -12,14 +12,26 @@
 </head>
 
 <body>
+    <!-- Title -->
     <h1 class="text-danger text-center fst-italic m-3">Mobile Finder</h1>
+    <!-- Input field for search -->
     <header>
         <div class="input-group m-4 w-50 mx-auto">
-            <input type="text" class="form-control" placeholder="Search phone what you want"
+            <input id="input-field" type="text" class="form-control" placeholder="Search phone what you want"
                 aria-label="Recipient's username" aria-describedby="button-addon2">
-            <button class="btn btn-outline-primary btn-dark" type="button" id="button-addon2">Search</button>
+            <button onclick="loadPhone()" class="btn btn-outline-primary btn-dark" type="button"
+                id="button-addon2">Search</button>
         </div>
     </header>
+    <!-- display phone -->
+    <section>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+
+
+        </div>
+    </section>
+    <!-- java script link -->
+    <script src="js/script.js"></script>
 </body>
 
 </html>
