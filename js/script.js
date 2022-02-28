@@ -14,17 +14,19 @@ const loadPhone = () => {
 const displayPhone = (phones) => {
     phones.forEach(phone => {
         console.log(phone);
+        const parentDiv = document.getElementById('parent-div');
         const div = document.createElement('div');
         div.classList.add('col');
         div.innerHTML = `
-        <div class="card h-100">
-                    <img src="..." class="card-img-top" alt="...">
+        <div class="card h-100 ">
+                    <img src="${phone.image}" class="card-img-top img-fluid img-thumbnail" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
-                            additional content. This content is a little bit longer.</p>
+                        <h5 class="card-title">${phone.phone_name}</h5>
+                        <p class="card-text">${phone.brand}</p>
                     </div>
                 </div>
-        `
+        `;
+        parentDiv.appendChild(div)
+
     });
 }
