@@ -1,7 +1,10 @@
 const loadPhone = () => {
     const input = document.getElementById('input-field');
     const inputText = (input.value).toLowerCase();
+    // empty field
     input.value = "";
+    //load spinner
+    display('block');
     // load url from api
     const url = `https://openapi.programming-hero.com/api/phones?search=${inputText}`;
 
@@ -18,6 +21,7 @@ const displayPhone = (phones) => {
     parentDiv.textContent = ""
     if (phones.length <= 0) {
         error('No found result!!');
+        display('none')
     }
 
 
@@ -38,6 +42,7 @@ const displayPhone = (phones) => {
 
                     </div>
             `;
+        display('none')
         error('')
         parentDiv.appendChild(div)
 
@@ -98,4 +103,7 @@ const displayDetail = phone => {
 const error = (err) => {
     document.getElementById('error').innerText = err;
 
+}
+const display = (style) => {
+    document.getElementById('display').style.display = style;
 }
