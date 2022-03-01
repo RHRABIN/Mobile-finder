@@ -12,17 +12,20 @@ const loadPhone = () => {
 
 // display all  phone on ui
 const displayPhone = (phones) => {
+    // display detail clear
+    document.getElementById('display-detail').textContent = ""
+    const parentDiv = document.getElementById('parent-div');
+    parentDiv.textContent = ""
     if (phones.length <= 0) {
         error('No found result!!');
     }
 
 
     phones?.forEach(phone => {
-        const parentDiv = document.getElementById('parent-div');
-        // parentDiv.innerHTML = ""
+
         const div = document.createElement('div');
         div.classList.add('col');
-        // div.innerHTML = ""
+        // div.textContent = ""
         div.innerHTML = `
             <div class="card border-radious">
 
@@ -36,7 +39,6 @@ const displayPhone = (phones) => {
                     </div>
             `;
         error('')
-        parentDiv.textContent = " "
         parentDiv.appendChild(div)
 
     });
