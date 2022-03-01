@@ -1,3 +1,13 @@
 body{
     background-color: #b6cccb !important;
 }
+.img-width{
+    max-height: 80%;
+    max-width: 100%;
+}
+.border-radious{
+    border-radius: 20px !important;
+}
+.detail-background{
+    background-color: #c7d9ca;
+}
