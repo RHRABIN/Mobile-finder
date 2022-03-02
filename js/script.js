@@ -15,7 +15,7 @@ const loadPhone = () => {
         .then(data => displayPhone(data.data.slice(0, 20)))
 }
 
-// display all  phone on ui
+// display all  phone on ui ::::::::::::::::::::::
 const displayPhone = (phones) => {
     // display detail clear
     document.getElementById('display-detail').textContent = ""
