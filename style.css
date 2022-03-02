@@ -9,8 +9,29 @@ body{
     border-radius: 20px !important;
 }
 .detail-background{
-    background-color: #c7d9ca;
+    background-color: hsl(65, 10%, 75%);
+    
 }
-.display-class{
+.spinner-class{
     display: none;
 }
+.button-class{
+    display: none;
+}
+.more-result{
+    display: none;
+}
+.footer-class{
+    height: 100px;
+    width: 100%;
+    background-color: #3f4a42;
+    /* margin-top: 5rem; */
+    position:absolute;
+    bottom: 0; 
+} 
+@media only screen and (max-width: 900px){
+    .media-class{
+        width: 70% !important;
+    }
+}
+
